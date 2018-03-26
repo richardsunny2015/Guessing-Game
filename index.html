@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+  </head>
+  <body>
+
+      <div id='app' class="center container">
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='title'>Guessing Game!</h1>
+          <h3 id='subtitle'>Guess a number between 1-100</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' class="center" placeholder="#" maxlength="3" autofocus=autofocus></input>
+            <button type="button" class="btn btn-primary" id='submit'>Submit</button>
+          </div>
+
+          <div id='guesses' class=''>
+            <!-- unordered list of guesses -->
+            <ul class="guess-list">
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button type="button" class="btn btn-danger" id="reset">Reset</button>
+            <button type="button" class="btn btn-success" id="hint">Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class="center">
+        <div class="row">
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by Richard Lanchez</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+</html>
