@@ -2,41 +2,50 @@
   text-align: center;
 }
 ul {
-    list-style: none;
     padding: 0;
+
+    list-style: none;
 }
 img {
     display: inline;
+
     width: 200px;
     height: 100px;
 }
 #app {
   width: 60%;
   margin: 50px auto;
+
   background-color: rgba(256, 256, 256, 0);
 }
 #footer {
-    width: 100%;
-    border-top: solid 4px black;
-    background-color: white;
     position: fixed;
     bottom: 0;
+
+    width: 100%;
+
+    border-top: solid 4px black;
+    background-color: white;
 }
 html {
   box-sizing: 'border-box';
 }
 #input-parent {
+  position: relative;
+
   width: 160px;
   margin: 5% auto 50px;
-  position: relative;
 }
 .guess {
-  border-radius: 10%;
-  border: 2px solid black;
   display: inline;
+
   padding: 0 25px;
-  font-size: 60px;
+
+  border: 2px solid black;
+  border-radius: 10%;
   background-color: white;
+
+  font-size: 60px;
 }
 #menu-btns {
   width: 160px;
@@ -45,15 +54,19 @@ html {
 #player-input {
   width: 160px;
   height: 160px;
+
   border-radius: 50%;
+
   font-size: 80px;
 }
 #submit {
   position: absolute;
   top: 110px;
   left: 110px;
+
   width: 70px;
   height: 70px;
+
   border-radius: 50%;
 }
 body {
