@@ -8,7 +8,7 @@ ul {
 }
 img {
     display: inline;
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
 }
 #app {
@@ -63,8 +63,8 @@ html {
   top: 110px;
   left: 110px;
 
-  width: 70px;
-  height: 70px;
+  /* width: 90px; */
+  height: 80px;
 
   border-radius: 50%;
 }
