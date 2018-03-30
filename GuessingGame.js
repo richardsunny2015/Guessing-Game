@@ -95,10 +95,10 @@ var submitNumber = function(game) {
     endGame(response, game);
   } else {
     $('#title').text(response);
-    if (game.isLower()) {
-      $('subtitle').text('Guess Lower!');
+    if (!game.isLower()) {
+      $('#subtitle').text('Guess Lower!');
     } else {
-      $('subtitle').text('Guess Higher!');
+      $('#subtitle').text('Guess Higher!');
     }
     if ($('.current').length) {
       $('.current').removeClass('current').next().addClass('current').text(game.playersGuess);
