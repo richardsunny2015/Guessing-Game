@@ -71,6 +71,7 @@ html {
 body {
   background-image: url(cube.jpg);
   background-clip: padding-box;
+  background-size: cover;
 }
 #title {
   color: black;
