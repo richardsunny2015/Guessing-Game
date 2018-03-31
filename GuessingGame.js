@@ -24,10 +24,7 @@ Game.prototype.difference = function() {
 };
 
 Game.prototype.isLower = function() {
-  if (this.playersGuess < this.winningNumber) {
-    return true;
-  }
-  return false;
+  return this.playersGuess < this.winningNumber;
 };
 
 Game.prototype.playersGuessSubmission = function(num) {
@@ -89,9 +86,7 @@ var submitNumber = function(game) {
   var response = game.playersGuessSubmission(+playerInput);
   if (response === 'You have already guessed that number.') {
     $('#title').text(response);
-  } else if(response === 'You Win!') {
-    endGame(response, game);
-  } else if(response === 'You Lose.') {
+  } else if(response === 'You Win!' || response === 'You Lose.') {
     endGame(response, game);
   } else {
     $('#title').text(response);
