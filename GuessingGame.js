@@ -109,7 +109,7 @@ $(document).ready(function(){
     submitNumber(game);
   });
   $('#player-input').keypress(function(event) {
-    if (event.which == 13 && $('#title').text() !== 'You Lose.') {
+    if (event.which == 13 && $('#title').text() !== 'You Lose.' && $('#title').text() !== 'You Win!') {
       submitNumber(game);
     }
   });
