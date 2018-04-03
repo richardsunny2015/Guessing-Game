@@ -29,7 +29,7 @@ Game.prototype.isLower = function() {
 
 Game.prototype.playersGuessSubmission = function(num) {
   if (num >= 1 && num <= 100) {
-    this.playersGuess = num;
+    this.playersGuess = Math.floor(num);
     return this.checkGuess();
   } else {
     throw 'That is an invalid guess.';
